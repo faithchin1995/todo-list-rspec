@@ -22,6 +22,10 @@ class List
     tasks.select { |task| task.complete? }
   end
 
+  def count_task
+    tasks.size
+  end
+
   def incomplete_tasks
     tasks.select { |task| !task.complete? }
   end
